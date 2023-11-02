@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Animation Example</title>
+    <style>
+        /* fade in out */
+        .fade-in-out {
+            animation: fadeInOut 2s ease-in-out infinite;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* pulse */
+        .pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* slide in */
+        .slide-in {
+            animation: slideIn 2s ease-in-out infinite;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* slide out */
+
+        .slide-out {
+            animation: slideOut 2s ease-in-out infinite;
+        }
+
+        @keyframes slideOut {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* bounce */
+
+        .bounce {
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* rotate */
+
+        .rotate {
+            animation: rotate 2s ease-in-out infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(0);
+            }
+        }
+
+        /* zoom in */
+
+        .zoom-in {
+            animation: zoomIn 2s ease-in-out infinite;
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* zoom out */
+
+        .zoom-out {
+            animation: zoomOut 2s ease-in-out infinite;
+        }
+
+        @keyframes zoomOut {
+            0% {
+                transform: scale(1.2);
+            }
+            50% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* shake */
+
+        .shake {
+            animation: shake 2s ease-in-out;
+            animation: shake 2s ease-in-out infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="fade-in-out">
+        <p>This text will fade in and out.</p>
+    </div>
+<div class="pulse">
+    <p>This text will pulse.</p>
+</div>
+      <div class="slide-in">
+        <p>This text will slide in.</p>
+    </div>
+    <div class="slide-out">
+        <p>This text will slide out.</p>
+    </div>
+    <div class="bounce">
+        <p>This text will bounce.</p>
+    </div>
+    <div class="rotate">
+        <p>This text will rotate.</p>
+    </div>
+    <div class="zoom-in">
+        <p>This text will zoom in.</p>
+    </div>
+    <div class="zoom-out">
+        <p>This text will zoom out.</p>
+    </div>
+    <div class="shake">
+        <p>This text will shake.</p>
+    </div>
+</body>
+</html>
