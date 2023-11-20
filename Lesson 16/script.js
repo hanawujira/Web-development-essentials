@@ -1,26 +1,34 @@
 
 console.log("Hello, world!")
 
+const message = "Hello, world!";
 console.log(message);
 
+function greet() {
+  console.log("Hello, world!");
+}
 greet();
 
 function addNumbers(a, b) {
   return a + b;
 }
-console.log(addNumbers(5, 10, 15));
+console.log(addNumbers(5, 10));
 
 let person = {
   name: "John",
-  age: 30
+  age: 30,
+  address: {
+    city: "Addis Ababa"
+  }
 };
 console.log(person.address.city);
 
 let numbers = [1, 2, 3, 4, 5];
-console.log(numbers[10]);
+console.log(numbers[4]);
 
 let x = 10;
 let y = 0;
+if(y!== 0)
 console.log(x / y);
 
 // the code blow this comment doesn't have errors
@@ -55,6 +63,29 @@ let data = [
 // the function should not have any console.log statements
 // make sure to use forEach to loop through the array
 // make sure to use Object.key to loop through the properties of each object
+
+
+function displayPeople(data) {
+  let tableRows = "";
+
+  data.forEach(person => {
+    const { name, age, country } = person;
+
+    const row = `<tr>
+      <td>${name}</td>
+      <td>${age}</td>
+      <td>${country}</td>
+    </tr>`;
+
+    tableRows += row;
+  });
+
+  const table = document.getElementById("people-table");
+
+  table.innerHTML = tableRows;
+}
+
+displayPeople(data);
 
 
 
